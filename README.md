@@ -1,16 +1,15 @@
 # Python-API-Challenge
+
 In this section, we'll create a Python script to visualize the weather of 500+ cities of varying distance from the equator. To do so, you'll use a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and your problem-solving skills to create a representative model of weather across cities.
 
-The requirement is to create a series of scatter plots to showcase the following relationships:
+Create a series of scatter plots to showcase the following relationships
 
 * Temperature (F) vs. Latitude
 * Humidity (%) vs. Latitude
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
 
-After each plot, add a sentence or two explaining what the code is analyzing.
-
-The second requirement is to compute the linear regression for each relationship. This time, separate the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+Compute the linear regression for each relationship. 
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
 * Southern Hemisphere - Temperature (F) vs. Latitude
@@ -39,31 +38,14 @@ To complete this part of the assignment, we will need to do the following:
 
 * Create a heat map that displays the humidity for every city from Part 1, as in the following image:
 
-  ![heatmap](Images/heatmap.png)
+![Humidity Heatmap](https://user-images.githubusercontent.com/100891182/181995607-834375ed-a6f9-4a9a-9846-61b5360fbf50.png)
 
-* Narrow down the DataFrame to find your ideal weather condition. For example:
 
-  * A max temperature lower than 80 degrees but higher than 70.
+* Narrow down the DataFrame to find your ideal weather condition. 
 
-  * Wind speed less than 10 mph.
+  * Use Google Places API to find the first hotel for each city located within 5,000 meters of your coordinates.
 
-  * Zero cloudiness.
+* Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**
+![The Best Hotels](https://user-images.githubusercontent.com/100891182/181995613-457c5769-abf2-4dad-a34a-8eda69681823.png)
 
-  * Drop any rows that don't satisfy all three conditions. You want to be sure the weather is ideal.
 
-  * **Note:** Feel free to adjust your specifications, but make sure to limit the number of rows returned by your API requests to a reasonable number.
-
-* Use Google Places API to find the first hotel for each city located within 5,000 meters of your coordinates.
-
-* Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**, as in the following image:
-
-  ![hotel map](Images/hotel_map.png)
-
-As final considerations:
-
-* You must complete your analysis using a Jupyter notebook.
-* You must use the Matplotlib or Pandas plotting libraries.
-* For Part 1, you must include a written description of three observable trends based on the data.
-* For Part 2, you must take a screenshot of the heatmap that you create and include it in your submission.
-* Your plots must include labeling aspects like plot title (with date of analysis) and axis labels.
-* For max intensity in the heatmap, try setting it to the highest humidity found in the dataset.
