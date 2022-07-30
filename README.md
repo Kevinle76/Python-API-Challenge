@@ -55,29 +55,22 @@ Compute the linear regression for each relationship.
 
 ![Southern Hemisphere - Wind Speed (mph) vs  Latitude Linear Regression](https://user-images.githubusercontent.com/100891182/181995831-f00195e6-a36e-445c-ac58-4185125605a6.jpg)
 
-After each pair of plots, explain what the linear regression is modeling. For example, describe any relationships that you notice and any other findings you may have.
-Final notebook must:
-
-* Randomly select **at least** 500 unique (non-repeated) cities based on latitude and longitude.
-* Perform a weather check on each of the cities using a series of successive API calls.
-* Include a print log of each city as it's being processed, with the city number and city name.
-* Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
 ### Part 2: VacationPy
 
-Now, let's use skills working with weather data to plan future vacations. Use Jupyter-gmaps and the Google Places API for this part of the assignment.
+Plan future vacations with Jupyter-gmaps and the Google Places API.
 
 
-* Create a heat map that displays the humidity for every city from Part 1, as in the following image:
+* Create a heat map that displays the humidity for every city:
 
 ![Humidity Heatmap](https://user-images.githubusercontent.com/100891182/181995607-834375ed-a6f9-4a9a-9846-61b5360fbf50.png)
 
 
-* Narrow down the DataFrame to find your ideal weather condition. 
+* Find ideal weather condition. 
 
-  * Use Google Places API to find the first hotel for each city located within 5,000 meters of your coordinates.
 
 * Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**
+
 ![The Best Hotels](https://user-images.githubusercontent.com/100891182/181995613-457c5769-abf2-4dad-a34a-8eda69681823.png)
 
 
