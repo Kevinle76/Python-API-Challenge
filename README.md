@@ -1,4 +1,4 @@
-# Python-API-Challenge
+What's the Weather Like?
 
 In this section, we'll create a Python script to visualize the weather of 500+ cities of varying distance from the equator.
 
@@ -65,8 +65,6 @@ Plan future vacations with Jupyter-gmaps and the Google Places API.
 
 ![Humidity Heatmap](https://user-images.githubusercontent.com/100891182/181995607-834375ed-a6f9-4a9a-9846-61b5360fbf50.png)
 
-
-* Find ideal weather condition. 
 
 
 * Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**
